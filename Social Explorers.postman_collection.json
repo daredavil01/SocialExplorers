@@ -12,14 +12,14 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTE0OTM0LCJ1c2VyX2lkIjoiT0pQRDgxMUY1WE96S1pMNFdkNmdaZFRMQW8wMiIsInN1YiI6Ik9KUEQ4MTFGNVhPektaTDRXZDZnWmRUTEFvMDIiLCJpYXQiOjE2MDMxMTQ5MzQsImV4cCI6MTYwMzExODUzNCwiZW1haWwiOiJ1c2VyeUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidXNlcnlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.TUC3Vq08yQ-3DMFPjzg2Vr2wofB4c-qHWEEbP79hq3xECAaLfFpPkw8sdKlsHf0wWQ9D3LFFDXtlR5ybFjjZVMqgcIWsJflxzsyxTWcV_mTWe0UMgEaQNeAPA3VDpJt7NZMW9zQOVd-mRE9b0aM8A8MrnhwOSMpcpm0_nyDMz06ripsbBD_CLGP6lgXN6jRWm4XdCanmqnLCDujPGLNrS2sxaxidb9pxZWOWkQuFTwfVXizmHUykKnVi9zhle5wc_X8qhWT6YB6MYu07Idbsaal2m9y7S9a1hzwyupUs5t3XGeckNmXOVvqKXBYHF69WDV9jCyO8nolgrntNEvzcSw",
+						"value": "Bearer ..........................",
 						"type": "text",
 						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"sanket.tambare01@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"raw": "{\r\n    \"email\":\"sanket.tambare01@gmail.com\",\r\n    \"password\": \"*****************\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -50,7 +50,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"chaitanyataware@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"confirmPassword\": \"12345678\",\r\n    \"handle\": \"chaitanya\"\r\n}",
+					"raw": "{\r\n    \"email\":\"chaitanyataware@gmail.com\",\r\n    \"password\":\"********\",\r\n    \"confirmPassword\": \"*********\",\r\n    \"handle\": \"chaitanya\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
