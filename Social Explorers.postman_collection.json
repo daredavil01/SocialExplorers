@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "8526f748-0eb9-4df2-84f3-857342e2910a",
+		"name": "Social Explorers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTE0OTM0LCJ1c2VyX2lkIjoiT0pQRDgxMUY1WE96S1pMNFdkNmdaZFRMQW8wMiIsInN1YiI6Ik9KUEQ4MTFGNVhPektaTDRXZDZnWmRUTEFvMDIiLCJpYXQiOjE2MDMxMTQ5MzQsImV4cCI6MTYwMzExODUzNCwiZW1haWwiOiJ1c2VyeUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidXNlcnlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.TUC3Vq08yQ-3DMFPjzg2Vr2wofB4c-qHWEEbP79hq3xECAaLfFpPkw8sdKlsHf0wWQ9D3LFFDXtlR5ybFjjZVMqgcIWsJflxzsyxTWcV_mTWe0UMgEaQNeAPA3VDpJt7NZMW9zQOVd-mRE9b0aM8A8MrnhwOSMpcpm0_nyDMz06ripsbBD_CLGP6lgXN6jRWm4XdCanmqnLCDujPGLNrS2sxaxidb9pxZWOWkQuFTwfVXizmHUykKnVi9zhle5wc_X8qhWT6YB6MYu07Idbsaal2m9y7S9a1hzwyupUs5t3XGeckNmXOVvqKXBYHF69WDV9jCyO8nolgrntNEvzcSw",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sanket.tambare01@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/login",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "Login Request"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"chaitanyataware@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"confirmPassword\": \"12345678\",\r\n    \"handle\": \"chaitanya\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/signup",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				},
+				"description": "Signup Request"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/screams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/screams",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"screams"
+					]
+				},
+				"description": "Get all Screams"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMjA0OTM0LCJ1c2VyX2lkIjoiT0pQRDgxMUY1WE96S1pMNFdkNmdaZFRMQW8wMiIsInN1YiI6Ik9KUEQ4MTFGNVhPektaTDRXZDZnWmRUTEFvMDIiLCJpYXQiOjE2MDMyMDQ5MzQsImV4cCI6MTYwMzIwODUzNCwiZW1haWwiOiJ1c2VyeUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidXNlcnlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.I80jZwpMtUFukEyxBiwvI99okmmcpZE_MOPYNsPs4tRsGuLZBPwWDm4Kyr0wtEze8HrhqGloemooST_B77IC8WfQsgFsA4b-7FqewJHGeSMqm4yzWrNNr89TRMiHO4G2i3LyLpLFruHh-FVrraFui_6lRNgBqeObT8c6D13sQVJCokQleDDlOsCowA6M1k_eA2RDJM937NDxdlROOso9LmOYprELaYixCWn6kVrfWBC_5D5aZH1inRkgzd5HFeMKCxKItFN2z08AVQY0wn7MjNJKnX7t_9i7WgmB9_KysCEPx3WoKE_dlo2AiXs-5RB1hNyw9SkoXNVn9yzEZniavw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"Hi, I am Chaitanya!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"scream"
+					]
+				},
+				"description": "Post a scream"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/oJSGwq1qfO5Y9pQgEv2D",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMjA1MDMyLCJ1c2VyX2lkIjoiMHVIM2xZa1I2N2I4c3l2Wmc2em5DczQ1SGZYMiIsInN1YiI6IjB1SDNsWWtSNjdiOHN5dlpnNnpuQ3M0NUhmWDIiLCJpYXQiOjE2MDMyMDUwMzIsImV4cCI6MTYwMzIwODYzMiwiZW1haWwiOiJzYW5rZXQudGFtYmFyZTAxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJzYW5rZXQudGFtYmFyZTAxQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.A7C5vk5uvTWYgjQdJ9xtIv8jYgSSDtq5K1VfBUjOszSxXwTCf4W30R4JOnQ7aOag3japOW4CC6StwlDp8gWZYEAik2OfGNAB-dHzk29gq1SF76d5vCGjKefG-zJYz5B_n47QQqH14ku-0DKGhEZZAQxwQB9z4Woiz3BkWC6_ewWsyNdLZiUKnSYHKQ3oREuJ5UhDWAI9AViMBw7Vm8a-kFsG1UqN4ZjVyfaDG-leEfzCHeiG4TrhPSaC-NFW-4E4uZN_BfJ-mCydgcQ5lFg6gbjuQx-UYV7tAbneakg7TlHE4dXaRaYPun7mCkgLsDhaOq69LdFt-0Kwv6j8PFNZtw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"This is A comment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/XllnQcKC5HtWeLP6xLQx/comment",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"scream",
+						"XllnQcKC5HtWeLP6xLQx",
+						"comment"
+					]
+				},
+				"description": "Get a particular scream!"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/oJSGwq1qfO5Y9pQgEv2D",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTI1Nzk1LCJ1c2VyX2lkIjoiT0pQRDgxMUY1WE96S1pMNFdkNmdaZFRMQW8wMiIsInN1YiI6Ik9KUEQ4MTFGNVhPektaTDRXZDZnWmRUTEFvMDIiLCJpYXQiOjE2MDMxMjU3OTUsImV4cCI6MTYwMzEyOTM5NSwiZW1haWwiOiJ1c2VyeUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidXNlcnlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.G5e7Jzb4Ml1qe9U4bHbIgTOj01L3nhOopqP6RlsenXTn84K89Zg4r617ZoeQP8yO9MPspNQe6ku2acpytK7CZXXpf-2FPl2n0ExyIwDbG1gAnHUsECC7PcKeMR-x73U9WVd7oBjpYn6MGEDdGtd5pUA6giaRKW5ht0zOIgh3jCT2V01COzCfLX-dELKdFXFZANEAh2vriCZITxbOK72dgw6qIAbqJs8iHKWAr8-ZQHzUqXZ5X4nKNsgSVwSg6mNHz90F0J_5LTVl50Iesn9jUhMofTKLtP3KkAJUo_DMIM6atJJqp_x_2LQTh7bQIX7NivPQ_WvbLM9j3qAGfe0rWw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/oJSGwq1qfO5Y9pQgEv2D",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"scream",
+						"oJSGwq1qfO5Y9pQgEv2D"
+					]
+				},
+				"description": "Delete a scream"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/I2MrURU0HOgPHmWpdffp/comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTI2MTc5LCJ1c2VyX2lkIjoib0JJWktGQVBmQ2ZIcVZ3c0VGRFV1b1NmaFBxMiIsInN1YiI6Im9CSVpLRkFQZkNmSHFWd3NFRkRVdW9TZmhQcTIiLCJpYXQiOjE2MDMxMjYxNzksImV4cCI6MTYwMzEyOTc3OSwiZW1haWwiOiIxNzAzMDIxQHJpdGluZGlhLmVkdSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyIxNzAzMDIxQHJpdGluZGlhLmVkdSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.UiVzbv2cW5zEWx5T0uWNyBmz1EGNOYgROczwfFGCJcBRSkf1ZUsYfFnerIHo-O85B7RcbmbwcAouJXGNxJeaYXGa27KEF3PPRpu-uEle4bJp--rpQppdFhGHaKJIzzVxwzOTF3cWnkKIFz8MXW3K4o0RiFfHeRfMLTf3FouBkb_iWbbqnJxy_tj_0C8nDHCDXeHLh0uCHYwoL6EIPm30bIkgc9KovrRC20uNZ7YmP1VXYf0a78YK2rGFZAe7yIff2kRApUjqKkd_5LmVyGkCnm1LcQ2sr7ftrROYWIcHWXYyUZxWVwt5yhtUmn-Q8VmiUZopwu62fQAbzPfNv2x9Bg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"Welcome to Social Explorers! This is Second Comment!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/I2MrURU0HOgPHmWpdffp/comment",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"scream",
+						"I2MrURU0HOgPHmWpdffp",
+						"comment"
+					]
+				},
+				"description": "Comment on a post"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/I2MrURU0HOgPHmWpdffp/unlike",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTI2MTc5LCJ1c2VyX2lkIjoib0JJWktGQVBmQ2ZIcVZ3c0VGRFV1b1NmaFBxMiIsInN1YiI6Im9CSVpLRkFQZkNmSHFWd3NFRkRVdW9TZmhQcTIiLCJpYXQiOjE2MDMxMjYxNzksImV4cCI6MTYwMzEyOTc3OSwiZW1haWwiOiIxNzAzMDIxQHJpdGluZGlhLmVkdSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyIxNzAzMDIxQHJpdGluZGlhLmVkdSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.UiVzbv2cW5zEWx5T0uWNyBmz1EGNOYgROczwfFGCJcBRSkf1ZUsYfFnerIHo-O85B7RcbmbwcAouJXGNxJeaYXGa27KEF3PPRpu-uEle4bJp--rpQppdFhGHaKJIzzVxwzOTF3cWnkKIFz8MXW3K4o0RiFfHeRfMLTf3FouBkb_iWbbqnJxy_tj_0C8nDHCDXeHLh0uCHYwoL6EIPm30bIkgc9KovrRC20uNZ7YmP1VXYf0a78YK2rGFZAe7yIff2kRApUjqKkd_5LmVyGkCnm1LcQ2sr7ftrROYWIcHWXYyUZxWVwt5yhtUmn-Q8VmiUZopwu62fQAbzPfNv2x9Bg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/I2MrURU0HOgPHmWpdffp/unlike",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"scream",
+						"I2MrURU0HOgPHmWpdffp",
+						"unlike"
+					]
+				},
+				"description": "Like /unlike a post"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/user/image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMjU5MDc2LCJ1c2VyX2lkIjoiMHVIM2xZa1I2N2I4c3l2Wmc2em5DczQ1SGZYMiIsInN1YiI6IjB1SDNsWWtSNjdiOHN5dlpnNnpuQ3M0NUhmWDIiLCJpYXQiOjE2MDMyNTkwNzYsImV4cCI6MTYwMzI2MjY3NiwiZW1haWwiOiJzYW5rZXQudGFtYmFyZTAxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJzYW5rZXQudGFtYmFyZTAxQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.WbNYjVz8h9Js1Ihbd3TWdmUUy1oy72tGlyugrCgDJPoCmo0IjKDelIHVRPFNENOjm_tU-bJ7CiOeSCEAi3zBq3RNedgk-D4MdzM6uTLZsmFxJs0i_XNE9wwSIQL6Lsgir1IjWKj8UEsw0ErqfA6PQLalxiEcKNa6pvkTMeRXLtuvVDz8d_kgFJGcSsd_twsZYJ8dC3c-_4JZiKVBCoOdXSGO_TzE_j2MCWLBVWWglsi7n3SPBGFThNjIUUalEQZWAqWDPVG8klfMgfMjzQXZt8mZcRlZPf_II4kZXsQ0K9Endu_Ioa9qZ3WHTVIE6ZjybkO4afrE9WmgBdGZYskziA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/socialexplorers-aae2b/us-central1/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"socialexplorers-aae2b",
+						"us-central1",
+						"api",
+						"user"
+					]
+				},
+				"description": "Add User Profile Image"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTI4MDg3LCJ1c2VyX2lkIjoib0JJWktGQVBmQ2ZIcVZ3c0VGRFV1b1NmaFBxMiIsInN1YiI6Im9CSVpLRkFQZkNmSHFWd3NFRkRVdW9TZmhQcTIiLCJpYXQiOjE2MDMxMjgwODcsImV4cCI6MTYwMzEzMTY4NywiZW1haWwiOiIxNzAzMDIxQHJpdGluZGlhLmVkdSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyIxNzAzMDIxQHJpdGluZGlhLmVkdSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.imTs-xfL9NiErW_UCwNRv_5CVfLZE8psl3fXUWjsr3nY7SAXfazMpYAJ4tbc3tKa2Q4byOxJkOhIVzQykajsSryFQ1OpekKE47br156H5jlzhFNJFUbw2cc2mcyROEIcp30wJBK33hIspTNlAp92wyc1BM4qu7QUHbvQaEW7cyr7NzuuMNO_MozFyY5h34EFD69YbvGX6ByXa-yJBVQeDBoIFnU8ip7ojXk-SyxgV-VynWBKEmx-ED4biDV-zAkfKdaIiE-Yp1L4pB-xuk9BHCgh32zFUUoCyegA9Im2Kdcj-961MKHEutaEg6FZC5IxJ6hgn2uVoK8LnQZcZVpKNQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bio\":\"I am Sanket!\",\r\n    \"website\":\"https://sanket001.tumblr.com\",\r\n    \"location\": \"Pune, India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/user",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "Update user details!"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/user/sanket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTI4MDg3LCJ1c2VyX2lkIjoib0JJWktGQVBmQ2ZIcVZ3c0VGRFV1b1NmaFBxMiIsInN1YiI6Im9CSVpLRkFQZkNmSHFWd3NFRkRVdW9TZmhQcTIiLCJpYXQiOjE2MDMxMjgwODcsImV4cCI6MTYwMzEzMTY4NywiZW1haWwiOiIxNzAzMDIxQHJpdGluZGlhLmVkdSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyIxNzAzMDIxQHJpdGluZGlhLmVkdSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.imTs-xfL9NiErW_UCwNRv_5CVfLZE8psl3fXUWjsr3nY7SAXfazMpYAJ4tbc3tKa2Q4byOxJkOhIVzQykajsSryFQ1OpekKE47br156H5jlzhFNJFUbw2cc2mcyROEIcp30wJBK33hIspTNlAp92wyc1BM4qu7QUHbvQaEW7cyr7NzuuMNO_MozFyY5h34EFD69YbvGX6ByXa-yJBVQeDBoIFnU8ip7ojXk-SyxgV-VynWBKEmx-ED4biDV-zAkfKdaIiE-Yp1L4pB-xuk9BHCgh32zFUUoCyegA9Im2Kdcj-961MKHEutaEg6FZC5IxJ6hgn2uVoK8LnQZcZVpKNQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/user/sanket",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"user",
+						"sanket"
+					]
+				},
+				"description": "Get user Details"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/notifications",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTI5MTQ0LCJ1c2VyX2lkIjoiT0pQRDgxMUY1WE96S1pMNFdkNmdaZFRMQW8wMiIsInN1YiI6Ik9KUEQ4MTFGNVhPektaTDRXZDZnWmRUTEFvMDIiLCJpYXQiOjE2MDMxMjkxNDQsImV4cCI6MTYwMzEzMjc0NCwiZW1haWwiOiJ1c2VyeUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidXNlcnlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.niS4XygN8FD9ohcBRB567RXJCsNDVR8W-ixqGS2ApxcMCsiohiTvgzu9EyGfl523cK9leFr8MBv6ITRsyTIfY00iPdQ43J1YZ22KPwoxZKLUOfQVzL0rLuaGBty-qWWIswF4uoofptxj48pmbyu186EJp5zhzw3PAVKANzrV3-ezch6rLYV-Sc2iSwkAWHlK9o5cTMvxqguYBLPdaBgc_bGEnOAptpr6rEeVmCAYJ5LQPd4Ycg5DpxIO2UYT1Fz60JpniO_Rv3IkbIhjNhNmWejK6mnbVq-jIlb6hh4LD3JcLFhfZwixlQKmngbM9nWctqunn-WV1ptW_-bkinpFbg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"YX5SuJUjbMSq7hNth3dj\",\r\n    \"C9kWcBhwmdzvsO10PUH2\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/notifications",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"notifications"
+					]
+				},
+				"description": "Mark Notifications READ"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/I2MrURU0HOgPHmWpdffp",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlM2FlZWUyYjVjMDhjMGMyODFhNGZmN2RjMmRmOGIyMzgyOGQ1YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXVkIjoic29jaWFsZXhwbG9yZXJzLWFhZTJiIiwiYXV0aF90aW1lIjoxNjAzMTI5MTQ0LCJ1c2VyX2lkIjoiT0pQRDgxMUY1WE96S1pMNFdkNmdaZFRMQW8wMiIsInN1YiI6Ik9KUEQ4MTFGNVhPektaTDRXZDZnWmRUTEFvMDIiLCJpYXQiOjE2MDMxMjkxNDQsImV4cCI6MTYwMzEzMjc0NCwiZW1haWwiOiJ1c2VyeUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidXNlcnlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.niS4XygN8FD9ohcBRB567RXJCsNDVR8W-ixqGS2ApxcMCsiohiTvgzu9EyGfl523cK9leFr8MBv6ITRsyTIfY00iPdQ43J1YZ22KPwoxZKLUOfQVzL0rLuaGBty-qWWIswF4uoofptxj48pmbyu186EJp5zhzw3PAVKANzrV3-ezch6rLYV-Sc2iSwkAWHlK9o5cTMvxqguYBLPdaBgc_bGEnOAptpr6rEeVmCAYJ5LQPd4Ycg5DpxIO2UYT1Fz60JpniO_Rv3IkbIhjNhNmWejK6mnbVq-jIlb6hh4LD3JcLFhfZwixlQKmngbM9nWctqunn-WV1ptW_-bkinpFbg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/scream/I2MrURU0HOgPHmWpdffp",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"scream",
+						"I2MrURU0HOgPHmWpdffp"
+					]
+				},
+				"description": "Delete A Post"
+			},
+			"response": []
+		},
+		{
+			"name": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/screams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-socialexplorers-aae2b.cloudfunctions.net/api/screams",
+					"protocol": "https",
+					"host": [
+						"us-central1-socialexplorers-aae2b",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"screams"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
